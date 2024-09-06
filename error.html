@@ -1,9 +1,76 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #333;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .cart {
+            font-size: 8rem;
+            margin-bottom: 1rem;
+        }
+        .items {
+            position: absolute;
+            font-size: 2rem;
+        }
+        #item1 { top: -30px; left: 10px; transform: rotate(-15deg); }
+        #item2 { top: -20px; right: 20px; transform: rotate(10deg); }
+        #item3 { bottom: -20px; left: 30px; transform: rotate(5deg); }
+        #item4 { bottom: -30px; right: 10px; transform: rotate(-10deg); }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart">🛒</div>
+        <h1>404</h1>
+        <p>Упс! Похоже, такая страница отсутсвует на складе. Зайдите позже</p>
+        <a href="#" class="btn">Вернуться в каталог</a>
+        <div class="items" id="item1">📦</div>
+        <div class="items" id="item2">📝</div>
+        <div class="items" id="item3">💼</div>
+        <div class="items" id="item4">🔍</div>
+    </div>
+</body>
 </html>
