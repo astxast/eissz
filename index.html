@@ -1,9 +1,173 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProcureMax - Ваш надежный партнер в закупках</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 5rem 0;
+        }
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .hero {
+            background: url('/api/placeholder/1200/600') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 15px;
+        }
+        .services {
+            background: #f4f4f4;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>ProcureMax</h1>
+                <p>Ваш надежный партнер в мире закупок</p>
+                <a href="#contact" class="btn">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-icon">🛒</div>
+                    <h3>Оптимизация закупок</h3>
+                    <p>Улучшаем ваши процессы закупок для максимальной эффективности.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">📊</div>
+                    <h3>Анализ рынка</h3>
+                    <p>Предоставляем актуальную информацию о тенденциях рынка и ценах.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🤝</div>
+                    <h3>Переговоры с поставщиками</h3>
+                    <p>Ведем переговоры от вашего имени для получения лучших условий.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">📦</div>
+                    <h3>Управление поставками</h3>
+                    <p>Обеспечиваем бесперебойность поставок и контроль качества.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>ProcureMax - это команда профессионалов с многолетним опытом в сфере закупок. Мы помогаем компаниям оптимизировать процессы, сократить расходы и повысить эффективность закупочной деятельности.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Готовы начать оптимизацию ваших закупок? Свяжитесь с нами прямо сейчас!</p>
+            <a href="mailto:info@procuremax.ru" class="btn">Отправить email</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ProcureMax. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
 </html>
